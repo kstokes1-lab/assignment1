@@ -138,44 +138,52 @@
 <body>
   <div class="container">
 
-    <div id="header">
-      <div class="logo">Hofstra Student Services</div>
+    <!-- I used <header> for the Hofstra Student Services title and tagline because it introduces the page and gives context to users -->
+    <header id="header">
+      <h1  class="logo">Hofstra Student Services</h1>
       <div class="tagline">Updates, deadlines, and announcements</div>
-    </div>
+    </header>
 
     <!-- Students should convert this into <nav> containing a real list (<ul><li><a>) -->
-    <div id="nav">
-      <a href="#">Home</a>
-      <a href="#">Announcements</a>
-      <a href="#">Events</a>
-      <a href="#">Contact</a>
-    </div>
+  <!-- I used <nav> for the Home, Announcements, Events, and Contact links because it contains the main navigation menu for the website -->
+  <nav id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
     <div class="layout">
-      <div id="content">
+      
+      <!-- I used <main> for the posts like Registration Reminder and Library Workshop because it holds the primary content of the page -->
+      <main id="content">
 
         <!-- Students should convert each .post into an <article> with an <h2> -->
-        <div class="post">
+        <!-- I used <article> for each post (Registration Reminder and Library Workshop) because each one is a separate, self-contained piece of content -->
+        <article class="post">
           <!-- Students should convert this into headings (h1/h2) and fix hierarchy -->
-          <div class="title">Registration Reminder</div>
+          <h2 class="title">Registration Reminder</h2>
           <div class="meta">Posted Feb 12</div>
           <div class="text">
             Course registration closes Friday. Meet with your advisor if you have holds.
           </div>
-        </div>
+        </article>
 
-        <div class="post">
-          <div class="title">Library Workshop</div>
+        <article class="post">
+          <h2 class="title">Library Workshop</h2>
           <div class="meta">Posted Feb 10</div>
           <div class="text">
             A research skills workshop is available this week. Limited seats.
           </div>
-        </div>
+        </article>
 
-      </div>
+      </main>
 
       <!-- Students should convert this into <aside> -->
-      <div id="sidebar">
+      <!-- I used <aside> for the Related Links and Contact sections because they provide additional information that is not the main focus -->
+      <aside id="sidebar">
 
         <div class="box">
           <div class="title">Related Links</div>
@@ -191,12 +199,12 @@
           Phone: (555) 555-5555
         </div>
 
-      </div>
+      </aside>
     </div>
 
-    <div id="footer">
+    <footer id="footer">
       © Hofstra University
-    </div>
+    </footer>
 
   </div>
 </body>
